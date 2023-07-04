@@ -20,11 +20,6 @@ resource "oci_identity_tag" "tag_virtual_node" {
   name             = "release"
   tag_namespace_id = oci_identity_tag_namespace.ns_virtual_node.id
 
-  validator {
-    validator_type = "ENUM"
-    values         = ["release", "1.0.1"]
-  }
-
   provisioner "local-exec" {
     command = "sleep 120"
   }

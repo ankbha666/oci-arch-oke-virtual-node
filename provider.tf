@@ -9,13 +9,13 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
-
 provider "oci" {
-  region = var.region
+	region = var.region
 }
 
-
-provider "oci" {
+provider oci {
+  auth = "SecurityToken"
+  config_file_profile = "AB"
   alias  = "home"
   region = lookup(local.region_map, data.oci_identity_tenancy.tenancy.home_region_key)
 }

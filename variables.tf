@@ -1,12 +1,12 @@
 # Compartment to deploy OKE Virual Node Cluster
 variable "compartment_id" {
   type    = string
-  default = ""
+  default = "ocid1.tenancy.oc1..aaaaaaaa2zoealkeeerwxvl5zr2boiyykckzilfzyimadxngxezwz3gd472q"
 }
 
 variable "tenancy_ocid" {
   type    = string
-  default = ""
+  default = "ocid1.tenancy.oc1..aaaaaaaa2zoealkeeerwxvl5zr2boiyykckzilfzyimadxngxezwz3gd472q"
 }
 
 
@@ -17,7 +17,7 @@ variable "kubernetes_version" {
 
 variable "region" {
   type    = string
-  default = ""
+  default = "us-ashburn-1"
 }
 
 # Shape of Virtual Nodes
