@@ -42,5 +42,5 @@ variable "create_IAM_policy" {
 variable "deploy_ingress_controller" {
   description = "Set to true to create the resource, false to skip it."
   type        = bool
-  default     = true
+  default     = false
 }
