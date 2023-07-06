@@ -30,7 +30,7 @@ variable "pod_shape" {
 # number of Virtual Nodes
 variable "virtual_node_count" {
   type    = number
-  default = 1
+  default = 3
 }
 
 variable "create_IAM_policy" {
@@ -42,5 +42,5 @@ variable "create_IAM_policy" {
 variable "deploy_ingress_controller" {
   description = "Set to true to create the resource, false to skip it."
   type        = bool
-  default     = false
+  default     = true
 }
